@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .q{
+        font-size: 26px;
+        color: rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      .q:before{
+        content :attr(data-text);
+        position: absolute;
+        top: 0;
+        color: #1bfaad;
+        overflow: hidden;
+      }
+      .q:hover:before {
+        animation: name 2s steps(8) forwards;
+        
+
+      }
+      /* .a:hover{
+        animation: name1 2s steps(8) forwards;
+
+      } */
+      @keyframes name{
+        0%{
+            width: 121.984px;
+        }
+        100%{
+            width: 0px;
+        }
+        
+      }
+      @keyframes name1{
+        0%{
+            width: 0px;
+        }
+        100%{
+            width: 121px;
+        }
+      }
+    </style>
+</head>
+<body>
+<div class="a">
+    <span data-text = '12345678'  class="q">
+        
+        12345678
+    </span>
+</div>
+</body>
+</html>
